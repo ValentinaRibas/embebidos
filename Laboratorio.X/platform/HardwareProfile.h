@@ -98,14 +98,7 @@ extern "C" {
         Describe enumeration elements and structure and union members above each 
         element or member.
      */
-    typedef struct _example_struct_t {
-        /* Describe structure member. */
-        int some_number;
 
-        /* Describe structure member. */
-        bool some_flag;
-
-    } example_struct_t;
 
 
     // *****************************************************************************
@@ -170,15 +163,15 @@ extern "C" {
 }
 #endif
 
-#endif /* _EXAMPLE_FILE_NAME_H */
-
 
 
 #ifndef _HARDWARE_PROFILE_H    /* Guard against multiple inclusion */
 #define _HARDWARE_PROFILE_H 
 
-#define LEDA_SetDigitalOutput() (TRISAbits.TRISA7 = 0)
-#define LEDB_SetDigitalOutput() (TRISBbits.TRISB14 = 0)
+
+
+#include <stdbool.h>
+
 
 // analizar otra forma de utilizar la estructura de datos TRISAbits
 
@@ -189,6 +182,21 @@ extern "C" {
 #define LEDB_SetHigh()
 #define LEDB_SetLow()
 #define LEDB_Toggle()
+
+
+#define LEDA_SetDigitalOutput() (TRISAbits.TRISA7 = 0)
+#define LEDB_SetDigitalOutput() (TRISBbits.TRISB14 = 0)
+
+    typedef struct _example_struct_t {
+        /* Describe structure member. */
+        int some_number;
+
+        /* Describe structure member. */
+        bool some_flag;
+
+    } example_struct_t;
+
+
 
 /* *****************************************************************************
  End of File

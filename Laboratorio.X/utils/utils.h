@@ -15,8 +15,16 @@
  */
 /* ************************************************************************** */
 
-#ifndef _EXAMPLE_FILE_NAME_H    /* Guard against multiple inclusion */
+
+
+
+#ifndef _EXAMPLE_FILE_NAME_H
+/* Guard against multiple inclusion */
+
+
 #define _EXAMPLE_FILE_NAME_H
+
+#include <stdbool.h>
 
 #define UT_DELAY_CYCLES 500
 
@@ -103,14 +111,7 @@ extern "C" {
         Describe enumeration elements and structure and union members above each 
         element or member.
      */
-    typedef struct _example_struct_t {
-        /* Describe structure member. */
-        int some_number;
 
-        /* Describe structure member. */
-        bool some_flag;
-
-    } example_struct_t;
 
 
     // *****************************************************************************
@@ -176,6 +177,16 @@ extern "C" {
 #endif
 
 #endif /* _EXAMPLE_FILE_NAME_H */
+
+
+    typedef struct _example_struct_t {
+        /* Describe structure member. */
+        int some_number;
+
+        /* Describe structure member. */
+        bool some_flag;
+
+    } example_struct_t;
 
 /* *****************************************************************************
  End of File
