@@ -167,7 +167,7 @@ extern "C" {
 
 #ifndef _HARDWARE_PROFILE_H    /* Guard against multiple inclusion */
 #define _HARDWARE_PROFILE_H 
-
+#endif
 
 
 #include <stdbool.h>

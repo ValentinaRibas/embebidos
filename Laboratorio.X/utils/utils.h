@@ -179,14 +179,14 @@ extern "C" {
 #endif /* _EXAMPLE_FILE_NAME_H */
 
 
-    typedef struct _example_struct_t {
-        /* Describe structure member. */
-        int some_number;
-
-        /* Describe structure member. */
-        bool some_flag;
-
-    } example_struct_t;
+//    typedef struct _example_struct_t {
+//        /* Describe structure member. */
+//        int some_number;
+//
+//        /* Describe structure member. */
+//        bool some_flag;
+//
+//    } _example_struct_t;
 
 /* *****************************************************************************
  End of File
