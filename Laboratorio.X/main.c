@@ -193,12 +193,27 @@ static int ExampleLocalFunction(int param1, int param2) {
 
 #define ARRAY_SIZE 10
 
+
 int exampleData;
 char exampleArray[ARRAY_SIZE];
 
+
+
 int main ( void ){
+
     while(1){
-        Nop();
+        LEDA_SetHigh();
+        LEDB_SetHigh();
+        UT_delay();
+        LEDA_SetLow();
+        LEDB_SetLow();
+        UT_delay();
+        
+//        Nop();
+//        LEDA_Toggle();
+//        LEDB_Toggle();
+//        UT_delay();
+        
     }
     return 0;
 }
