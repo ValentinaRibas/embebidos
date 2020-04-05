@@ -175,13 +175,13 @@ extern "C" {
 
 // analizar otra forma de utilizar la estructura de datos TRISAbits
 
-#define LEDA_SetHigh()
-#define LEDA_SetLow()
-#define LEDA_Toggle()
+#define LEDA_SetHigh() (TRISAbits.TRISA7 = 1)
+#define LEDA_SetLow() (TRISAbits.TRISA7 = 0)
+#define LEDA_Toggle() (TRISAbits.TRISA7 = ~TRISAbits.TRISA7) //~ sirve para flippear el valor binario
 
-#define LEDB_SetHigh()
-#define LEDB_SetLow()
-#define LEDB_Toggle()
+#define LEDB_SetHigh() (TRISBbits.TRISB14= 1)
+#define LEDB_SetLow() (TRISBbits.TRISB14 = 0)
+#define LEDB_Toggle() (TRISBbits.TRISB14 = ~TRISBbits.TRISB14)
 
 
 #define LEDA_SetDigitalOutput() (TRISAbits.TRISA7 = 0)

@@ -200,7 +200,10 @@ char exampleArray[ARRAY_SIZE];
 
 
 int main ( void ){
-
+    
+    LEDA_SetDigitalOutput();
+    LEDB_SetDigitalOutput();
+    
     while(1){
         LEDA_SetHigh();
         LEDB_SetHigh();
