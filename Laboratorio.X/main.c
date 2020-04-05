@@ -200,17 +200,18 @@ char exampleArray[ARRAY_SIZE];
 
 
 int main ( void ){
-    
     LEDA_SetDigitalOutput();
     LEDB_SetDigitalOutput();
-    
+    LEDA_SetHigh();
+    LEDB_SetHigh();
     while(1){
-        LEDA_SetHigh();
-        LEDB_SetHigh();
+        
         UT_delay();
-        LEDA_SetLow();
-        LEDB_SetLow();
+        LEDA_Toggle();
+        LEDB_Toggle();
         UT_delay();
+        /*LEDA_SetHigh();
+        LEDB_SetHigh();*/
         
 //        Nop();
 //        LEDA_Toggle();
