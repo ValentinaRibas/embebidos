@@ -5,6 +5,8 @@
         <group>
             <file>file:/C:/Users/Pablo/Documents/GitHub/embebidos/Laboratorio2.X/utils/utils.c</file>
             <file>file:/C:/Users/Pablo/Documents/GitHub/embebidos/Laboratorio2.X/main.c</file>
+            <file>file:/C:/Users/Pablo/Documents/GitHub/embebidos/Laboratorio2.X/mcc_generated_files/pin_manager.h</file>
+            <file>file:/C:/Users/Pablo/Documents/GitHub/embebidos/Laboratorio2.X/mcc_generated_files/pin_manager.c</file>
         </group>
     </open-files>
 </project-private>

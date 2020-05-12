@@ -8,6 +8,7 @@
 #include "mcc_generated_files/system.h"
 #include "utils/utils.h"
 #include "platform/button.h"
+#include "mcc_generated_files/tmr2.h"
 #include "mcc_generated_files/usb/usb.h"
 
 #include <stdio.h>
@@ -26,11 +27,16 @@ int main(void)
     bool flagUSB;
     SYSTEM_Initialize();
     
-   
+    TMR2_Initialize();
     
-    while(1){
+    
+    turn_on_red_LED();
+    
+    
+    
+    /* while(1){
         
-        CDCTxService();
+       CDCTxService();
         if((USBGetDeviceState()< CONFIGURED_STATE) && (USBIsDeviceSuspended() == false)){
             continue;
             
@@ -44,7 +50,8 @@ int main(void)
         }
         
         
-    }
+        
+    }*/
     return 1;
     
     

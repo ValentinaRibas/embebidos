@@ -1,6 +1,6 @@
 #include <stdbool.h>
 #include <stdint.h>
-
+#include "../mcc_generated_files/pin_manager.h"
 
 #define UT_DELAY_CYCLES 500
 
@@ -17,12 +17,10 @@ typedef struct {
 } ut_tmrDelay_t;
 
 
-int contador();
 
 bool UT_delayms(ut_tmrDelay_t* p_timer, uint32_t p_ms);
 
-
-
+void turn_on_red_LED();
 
 /* Provide C++ Compatibility */
 #ifdef __cplusplus

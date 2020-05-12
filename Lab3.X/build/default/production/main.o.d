@@ -3,8 +3,10 @@ main.c  \
 mcc_generated_files/pin_manager.h  \
  mcc_generated_files/system.h  \
 utils/utils.h  \
+ utils/../mcc_generated_files/pin_manager.h  \
 platform/button.h  \
- mcc_generated_files/usb/usb.h  \
+ mcc_generated_files/tmr2.h  \
+mcc_generated_files/usb/usb.h  \
  mcc_generated_files/usb/usb_device_config.h  \
  mcc_generated_files/usb/usb_common.h  \
 mcc_generated_files/usb/usb_ch9.h  \
